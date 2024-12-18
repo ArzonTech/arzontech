@@ -1,0 +1,639 @@
+:root {
+  --primary-color: #333237;
+  --secondary-color: #5d6165;
+  --accent-color: #ffffff;
+  --text-color: #333333;
+  --background-color: #FFFFFF;
+  --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinha o topo */
+  overflow-y: auto; /* Permite rolagem vertical */
+  z-index: 1001;
+  padding: 20px; /* Espaçamento nas laterais */
+}
+
+.lightbox img {
+  width: auto; /* Mantém o tamanho original da largura */
+  height: auto; /* Mantém o tamanho original da altura */
+  max-width: 1200px; /* Limita a largura máxima */
+  max-height: none; /* Permite que a altura ultrapasse o viewport */
+  margin: 20px auto; /* Centraliza horizontalmente */
+}
+
+
+.lightbox button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Header & Navigation */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: 2px;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+}
+
+/* Services Section */
+.services {
+  padding: 6rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 6rem 2rem;
+}
+
+.portfolio h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-item1 {
+  position: relative;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: var(--gradient);
+  background-image: url('public/1.png'); /* Caminho para a imagem */
+  background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; /* Centraliza a imagem */
+  background-position: top;
+}
+
+.portfolio-item2 {
+  position: relative;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: var(--gradient);
+  background-image: url('public/2.png'); /* Caminho para a imagem */
+  background-size: cover;
+  background-position: center;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.portfolio-item3 {
+  position: relative;
+  height: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: var(--gradient);
+  background-image: url('public/3.png'); /* Caminho para a imagem */
+  background-size: cover;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+
+.portfolio-content{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item1:hover .portfolio-content {
+  transform: translateY(0);
+}
+.portfolio-item2:hover .portfolio-content {
+  transform: translateY(0);
+}
+.portfolio-item3:hover .portfolio-content {
+  transform: translateY(0);
+}
+
+/* Contact Section */
+.contact {
+  padding: 6rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.submit-button {
+  padding: 1rem 2rem;
+  background: var(--gradient);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.about {
+  padding: 6rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.about-content p {
+  margin-bottom: 1rem;
+}
+
+/* Adicione isso ao final do seu arquivo CSS existente */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    width: 0;
+    height: 20px;
+    background-color: var(--secondary-color);
+    transition: width 1s ease-out;
+}
+
+/* Ajuste o estilo da seção 'about' */
+.about {
+    padding: 6rem 2rem;
+    background-color: #f8f9fa;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.about-content p {
+    margin-bottom: 2rem;
+}
+
+
+.submit-button:hover {
+  transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Adicione estas animações no início do arquivo CSS */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateX(-100px);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+/* Animação para o header */
+header {
+  animation: slideIn 0.8s ease-out;
+}
+
+.about {
+  animation: slideIn 0.8s ease-out;
+} 
+
+/* Animação para o logo */
+.logo {
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Animação para links do menu */
+nav a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: var(--secondary-color);
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Animação para a seção hero */
+.hero-content {
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Animação para cards de serviço */
+.service-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Animação para itens do portfólio */
+.portfolio-item1, .portfolio-item2, .portfolio-item3 {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.portfolio-item1:hover, .portfolio-item2:hover, .portfolio-item3:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Animação para formulário de contato */
+.contact-form input, .contact-form textarea {
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  transform: translateX(10px);
+  border-color: var(--secondary-color);
+}
+
+/* Animação para o botão de envio */
+.submit-button {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--gradient);
+  background-size: 200% 200%;
+  animation: gradientFlow 5s ease infinite;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.submit-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeito de revelação ao rolar */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animação de entrada com rotação */
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+}
+
+/* Animação de expansão */
+@keyframes expand {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Animação de ondulação */
+@keyframes ripple {
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Animação de deslizamento com bounce */
+@keyframes slideInBounce {
+  0% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Animação de aparecimento gradual com movimento */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.service-card {
+  animation: rotateIn 0.6s ease-out;
+}
+
+.portfolio-item1, .portfolio-item2, .portfolio-item3 {
+  animation: expand 0.5s ease-out;
+}
+
+.cta-button:hover {
+  animation: ripple 0.8s ease-in-out;
+}
+
+.hero h1 {
+  animation: slideInBounce 1s ease-out;
+}
+
+.about-content p {
+  animation: fadeInUp 0.8s ease-out;
+}
