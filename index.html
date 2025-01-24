@@ -1,182 +1,428 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ArzonTech - Desenvolvimento Web</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/style.css">
-  </head>
-  <body>
-    <header class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container px-3 d-flex align-items-center justify-content-between">
-        <!-- Logo -->
-        <a class="navbar-brand fw-bold" href="#inicio">ARZONTECH</a>
 
-        <!-- Hamburger Button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mounja Power</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
 
-      <!-- Collapsible Menu -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#inicio">Início</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#servicos">Serviços</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfólio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contato">Contato</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+<body>
+  <div class="announcement">
+    <p>⚡ PROMOÇÃO POR TEMPO LIMITADO | FRETE GRÁTIS PARA TODO BRASIL</p>
+  </div>
 
-    <main>
-      <section id="inicio" class="hero">
+  <!-- Hero Carousel -->
+  <div class="hero-carousel swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
         <div class="hero-content">
-          <h1>Transformando Ideias em Realidade Digital</h1>
-          <p>Desenvolvimento de sites modernos e inovadores para impulsionar seu negócio</p>
-          <a href="#contato" class="cta-button">Comece seu Projeto</a>
+          <h2>Mounja</h2>
+          <p>“Revolucionário Mounja natural” o número um em resultados !</p>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
 
-      <section id="servicos" class="services">
-        <h2>Nossos Serviços</h2>
-        <div class="services-grid fade-in">
-          <div class="service-card">
-            <div class="service-icon">🎨</div>
-            <h3>Design Responsivo</h3>
-            <p>Sites que se adaptam perfeitamente a qualquer dispositivo</p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">💻</div>
-            <h3>Desenvolvimento Web</h3>
-            <p>Código limpo e otimizado para melhor performance</p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">📱</div>
-            <h3>Aplicações Web</h3>
-            <p>Sistemas web complexos e personalizados</p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">🧑‍🎨</div>
-            <h3>Design de Imagens</h3>
-            <p>Flyers e Banners personalizados para sua empresa ou produto</p>
-          </div>
-        </div>
-      </section>
+  <div class="container">
+    <!-- Product Header -->
+    <header class="product-header">
+      <p>Redução de medidas, principalmente em áreas como barriga, pernas e braços.</p>
+    </header>
 
-      <section id="about" class="about">
-        <h2>Sobre a Arzon Tech</h2>
-        <div class="about-content">
-            <p>A Arzon Tech é uma empresa especializada em desenvolvimento web e design digital, comprometida em transformar ideias inovadoras em soluções tecnológicas de alto impacto. Nossa equipe de profissionais altamente qualificados combina criatividade e expertise técnica para entregar projetos que não apenas atendem, mas superam as expectativas de nossos clientes.</p>
-            <p>Com um foco em design responsivo, desenvolvimento web avançado e criação de aplicações personalizadas, a Arzon Tech está na vanguarda das tendências digitais. Nosso objetivo é impulsionar o sucesso dos negócios de nossos clientes através de soluções digitais eficientes, intuitivas e visualmente atraentes.</p>
-            <p>Localizada em Seberi, RS, atendemos clientes em todo o Brasil, trazendo inovação e excelência técnica para cada projeto que realizamos.</p>
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Left Column - Product Image -->
+      <div class="product-image">
+        <img src="1.jpg" alt="RevitaLife Complex">
+        <div class="rating">
+          <div class="stars">
+          </div>
         </div>
+      </div>
+
+      <!-- Right Column - Product Info -->
+      <div class="product-info">
+        <div class="price-box">
+          <h2 style="text-align: center; font-size: 30px;">Informações sobre o produto:</h2>
+          <div class="price">
+            <p class="current-price" style="font-size: 20px;">Confira os benefícios e recursos exclusivos que este
+              produto oferece.</p>
+            <p class="installments">Disponível com diversas opções para atender às suas necessidades.</p>
+          </div>
+        </div>
+
+        <a href="#beneficios" class="buy-button">Saiba Mais</a>
+
+        <!-- Benefits -->
+
+      </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+      <h2>Benefícios Comprovados</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+              <line x1="16" y1="8" x2="2" y2="22"></line>
+              <line x1="17.5" y1="15" x2="9" y2="15"></line>
+            </svg>
+          </div>
+          <h3>Natural</h3>
+          <p>100% natural e saudável, sem efeitos colaterais.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <h3>Bem-Estar</h3>
+          <p>Melhore sua qualidade de vida com ingredientes naturais que promovem equilíbrio físico e mental</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <h3>Resultados Rápidos</h3>
+          <p>Veja resultados em poucas semanas com nossa fórmula cientificamente desenvolvida</p>
+        </div>
+      </div>
     </section>
 
-      <section class="portfolio" id="portfolio">
-        <h2>Portfólio</h2>
-        <div class="portfolio-grid fade-in">
-          <div class="portfolio-item1" data-bs-toggle="modal" data-bs-target="#portfolioModalAstro" data-image="public/1.png">
-            <div class="portfolio-content">
-              <h3>Astro Tubos</h3>
-              <p>E-commerce - Sistema Web</p>
-            </div>
-          </div>
-          <div class="portfolio-item2" data-bs-toggle="modal" data-bs-target="#portfolioModalWoods" data-image="public/2.png">
-            <div class="portfolio-content">
-              <h3>Shampoo Woods</h3>
-              <p>Landing Page</p>
-            </div>
-          </div>
-          <div class="portfolio-item3" data-bs-toggle="modal" data-bs-target="#portfolioModalEuropa" data-image="public/3.png">
-            <div class="portfolio-content">
-              <h3>Europa em 60 dias</h3>
-              <p>Landing Page</p>
-            </div>
-          </div>
+    <div class="benefits-container" id="beneficios">
+      <div class="benefits-section">
+        <div class="benefits-card">
+          <img src="https://mounjanatural.com/mounjapower12x/wp-content/uploads/2024/10/5-1-150x150.png"
+            alt="Auxílio no emagrecimento">
+          <h3>Auxilia no processo de emagrecimento</h3>
+          <p>Acelera o metabolismo através da nutrição celular eficaz, apoiando um processo de emagrecimento saudável.
+            Facilita a utilização de carboidratos como energia e melhora a absorção de proteínas.</p>
         </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="portfolioModalAstro" tabindex="-1" aria-labelledby="portfolioModalLabelAstro" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="portfolioModalLabel">Astro Tubos | E-commerce - Sistema Web</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="public/astro.png" class="img-fluid" id="modalImage" alt="Imagem do projeto">
-              </div>
-            </div>
-          </div>
+        <div class="benefits-card">
+          <img
+            src="https://mounjanatural.com/mounjapower12x/wp-content/uploads/2024/10/depositphotos_14740185-stock-photo-greedy-man-eating-burger-150x150.webp"
+            alt="Reduz a fome excessiva">
+          <h3>Reduz a fome excessiva</h3>
+          <p>O psyllium, quitosana e cromo reduzem a vontade de comer, formando um gel que promove uma sensação de
+            saciedade sem comprometer a saúde.</p>
         </div>
 
-        <div class="modal fade" id="portfolioModalWoods" tabindex="-1" aria-labelledby="portfolioModalLabelWoods" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="portfolioModalLabel">Shampoo Woods | Landing Page</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="public/woods.png" class="img-fluid" id="modalImage" alt="Imagem do projeto">
-              </div>
-            </div>
-          </div>
+        <div class="benefits-card">
+          <img src="https://mounjanatural.com/mounjapower12x/wp-content/uploads/2024/11/4-1-150x150.png"
+            alt="Redução de Gordura Corporal">
+          <h3>Controle Natural do Apetite por Doces</h3>
+          <p>O produto é formulado com extratos naturais, como o Gymnema Sylvestre, que ajudam a reduzir a sensibilidade
+            às papilas gustativas responsáveis pelo sabor doce. Isso inibe a vontade de consumir alimentos açucarados,
+            promovendo maior controle alimentar e contribuindo para uma dieta equilibrada.</p>
         </div>
-
-        <div class="modal fade" id="portfolioModalEuropa" tabindex="-1" aria-labelledby="portfolioModalLabelEuropa" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="portfolioModalLabel">Europa em 60 dias | Landing Page</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="public/europa.png" class="img-fluid" id="modalImage" alt="Imagem do projeto">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contato" class="contact">
-        <h2>Entre em Contato</h2>
-        <div class="contact-container">
-          <div class="contact-info">  
-            <h3>Informações de Contato</h3>
-            <p>📧 contato@arzon.com</p>
-            <p>📱 (55) 3199-0031</p>
-            <p>📍 Seberi, RS</p>
-          </div>
-          <form class="contact-form">
-            <input type="text" placeholder="Nome" required>
-            <input type="email" placeholder="E-mail" required>
-            <textarea placeholder="Mensagem" required></textarea>
-            <button type="submit" class="submit-button">Enviar Mensagem</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer-content">
-        <p>&copy; 2024 Arzon. Todos os direitos reservados.</p>
       </div>
-    </footer>
-  </body>
-  <script src="script.js"></script>
+    </div>
+
+    <!-- First CTA Section -->
+    <section class="cta-section">
+      <h2>Transforme Sua Vida Hoje</h2>
+      <p>Não espere mais para começar sua jornada de transformação</p>
+      <a href="#ofertas" class="cta-button">QUERO TRANSFORMAR MINHA VIDA</a>
+    </section>
+
+    <div class="reviews-carousel">
+      <h2 class="reviews-title">O que nossos clientes dizem</h2>
+      <div class="carousel-wrapper">
+        <button class="carousel-prev" aria-label="Anterior">←</button>
+        <div class="carousel">
+          <div class="review-card">
+            <img src="Imagens/pessoa4.jpg" alt="Foto do cliente">
+            <h3>Brena Alves</h3>
+            <p>"Eu saí do tamanho 42 para o 38 em 1 mês. Não vivo mais sem"</p>
+          </div>
+
+          <div class="review-card">
+            <img src="Imagens/pessoa3.jpg" alt="Foto do cliente">
+            <h3>Micheline Viana</h3>
+            <p>"Eu tinha feito de tudo para emagrecer e não conseguia. Com essas cápsulas emagreci 10kg em 2 meses e de
+              forma natural, sem reganho de peso"</p>
+          </div>
+        </div>
+        <button class="carousel-next" aria-label="Próximo">→</button>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <section class="infographic-section">
+    <h2>Nossa fórmula foi criada com produtos 100% naturais, sem contra indicações e pronto para dar o resultado e saúde
+      que tanto procura.</h2>
+    <img src="Adicionar1.svg" alt="Banner">
+  </section>
+
+
+
+
+  <!-- Before and After Section -->
+  <h2 style="text-align: center; color: #ee0175; font-size: 40px;">Resultados Reais</h2>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="ProvaSocial2.png" alt="Imagem 4">
+    </div>
+    <div class="gallery-item">
+      <img src="provaSocial.png" alt="Imagem 6">
+    </div>
+  </div>
+
+  <div class="mounja-section">
+    <h1>O poderoso <span class="mounja-highlight">MOUNJA</span> é um produto natural e sem contra indicações</h1>
+
+
+    <img src="3.png" alt="Mounja Power" class="mounja-bottle">
+
+    <p class="mounja-product-text">
+      Nossas poderosas cápsulas auxiliam na redução de peso! Um tratamento que atua diretamente no acúmulo de gordura,
+      proporcionando resultados rápidos sem os possíveis efeitos adversos de medicamentos mais fortes no fígado e no
+      estômago.
+    </p>
+
+    <p class="mounja-cta">
+      Esqueça chás e soluções milagrosas; invista em algo que pode realmente transformar a sua realidade!
+    </p>
+
+    <div class="mounja-whatsapp-button">
+      <svg fill="#ffffff" height="24" viewBox="0 0 24 24" width="24">
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-14h2v6h-2zm0 8h2v2h-2z" />
+      </svg>
+    </div>
+  </div>
+
+
+  <!-- Second CTA Section -->
+  <section class="cta-section alternative">
+    <h2>Não Perca Mais Tempo</h2>
+    <p>Junte-se a milhares de pessoas que já transformaram suas vidas</p>
+    <a href="#ofertas" class="cta-button">QUERO COMEÇAR AGORA</a>
+  </section>
+
+  <div class="aviso">
+    <h1>ATENÇÃO</h1>
+    <p>O MOUNJA POWER 12X VOCÊ NÃO ENCONTRA EM FARMÁCIAS, <br> SOMENTE AQUI!</p>
+  </div>
+
+
+  <div class="Mounja">
+    <div class="header">
+      <h1>2 Frascos<span>Mounja</span></h1>
+      <p>PARA DESCOBRIR O PODER
+        DO MOUNJA.</p>
+    </div>
+    <div class="content">
+      <div class="images">
+        <img src="2.jpg" alt="Mounja Bottles">
+      </div>
+      <p>SUPER PROMOÇÃO DE LANÇAMENTO NO BRASIL.</p>
+      <div class="price">
+        <h2>12x <span>12,04</span></h2>
+        <p>OU R$ 119,90 À VISTA</p>
+      </div>
+      <div class="color">
+        <div class="payment-methods">
+          <img src="https://www.maquinadecartao.com/img/1/visa-logo-bandeira-de-maquininha-de-cartao-david-tech.webp"
+            alt="Visa">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/1200px-Mastercard_2019_logo.svg.png"
+            alt="Mastercard">
+          <img src="https://marcasmais.com.br/wp-content/uploads/2021/10/1.png" alt="Elo">
+          <img
+            src="https://image-processor-storage.s3.us-west-2.amazonaws.com/uploads/3531e6c12744429b32ead4a14a684991/american-expresspngpng.png"
+            alt="Amex">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Hipercard_logo.svg" alt="Hipercard">
+        </div>
+        <ul>
+          <li>produto 100% natural</li>
+          <li>10 meses de tratamento</li>
+          <li>frete grátis para todo Brasil</li>
+          <li>super desconto pagando à vista</li>
+        </ul>
+        <button id="produto-btn" class="produto-button">QUERO APROVEITAR</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="Mounja">
+    <div class="header">
+      <h1>compre 3 e <span>LEVE 4</span></h1>
+      <p>RESULTADO GARANTIDO</p>
+    </div>
+    <div class="content">
+      <div class="images">
+        <img src="Adicionar4.png" alt="Mounja Bottles">
+        <div class="gratis-badge">
+          <span>+ 1 GRÁTIS</span>
+        </div>
+      </div>
+      <p>SUPER PROMOÇÃO DE LANÇAMENTO NO BRASIL.</p>
+      <div class="price">
+        <h2>12x <span>12,04</span></h2>
+        <p>OU R$ 179,90 À VISTA</p>
+      </div>
+      <div class="color">
+        <div class="payment-methods">
+          <img src="https://www.maquinadecartao.com/img/1/visa-logo-bandeira-de-maquininha-de-cartao-david-tech.webp"
+            alt="Visa">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/1200px-Mastercard_2019_logo.svg.png"
+            alt="Mastercard">
+          <img src="https://marcasmais.com.br/wp-content/uploads/2021/10/1.png" alt="Elo">
+          <img
+            src="https://image-processor-storage.s3.us-west-2.amazonaws.com/uploads/3531e6c12744429b32ead4a14a684991/american-expresspngpng.png"
+            alt="Amex">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Hipercard_logo.svg" alt="Hipercard">
+        </div>
+        <ul>
+          <li>produto 100% natural</li>
+          <li>10 meses de tratamento</li>
+          <li>frete grátis para todo Brasil</li>
+          <li>super desconto pagando à vista</li>
+        </ul>
+        <button id="produto-btn" class="produto-button">QUERO APROVEITAR</button>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="infographic-section">
+    <img src="Adicionar2.svg" alt="Banner">
+  </section>
+
+  
+
+  
+
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <h2>Dúvidas Frequentes</h2>
+    <div class="faq-grid">
+      <details class="faq-item">
+        <summary>O que é a mounja</summary>
+        <p>A combinação de berinjela, alcachofra e picolinato de cromo oferece benefícios significativos à saúde. Ela
+          ajuda a controlar o colesterol LDL e regular os níveis de açúcar no sangue, melhorando a sensibilidade à
+          insulina. Além disso, é rica em fibras, promovendo uma digestão saudável e aumentando a saciedade. Os
+          poderosos antioxidantes presentes nos ingredientes combatem radicais livres e protegem as células. Por fim,
+          também auxiliam na desintoxicação do organismo, favorecendo a saúde geral</p>
+      </details>
+      <details class="faq-item">
+        <summary>Como Usar</summary>
+        <p>Recomenda-se a ingestão de 2 cápsulas de Mounja ao dia. Para melhores resultados, tome uma cápsula pela manhã
+          e outra à noite, preferencialmente durante as refeições. Isso ajuda a maximizar a absorção dos nutrientes e a
+          eficácia do produto. É importante beber um copo de água ao ingerir as cápsulas. Para garantir a segurança e
+          eficácia do uso, consulte um profissional de saúde antes de iniciar a suplementação, especia lmente se você
+          estiver grávida, amamentando ou tiver condições de saúde pré-existentes.</p>
+      </details>
+    </div>
+  </section>
+
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+        <h2 class="modal-title">Escolha sua cidade</h2>
+        <p class="modal-description">Por favor, selecione sua localização para continuarmos com sua compra.</p>
+        <button id="natal-btn" class="city-button natal">Natal</button>
+        <button id="minas-btn" class="city-button minas">Minas Gerais</button>
+        <button id="close-modal" class="close-button">Fechar</button>
+    </div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2024 Mounjac. Todos os direitos reservados.</p>
+      <p class="disclaimer">Este produto não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper('.hero-carousel', {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+
+    const carousel = document.querySelector('.carousel');
+    const prevButton = document.querySelector('.carousel-prev');
+    const nextButton = document.querySelector('.carousel-next');
+
+    prevButton.addEventListener('click', () => {
+      carousel.scrollBy({ left: -320, behavior: 'smooth' });
+    });
+
+    nextButton.addEventListener('click', () => {
+      carousel.scrollBy({ left: 320, behavior: 'smooth' });
+    });
+
+
+
+    // Seleciona os elementos
+// Selecionar elementos
+const produtoBtn = document.getElementById("produto-btn");
+const modal = document.getElementById("modal");
+const closeModal = document.getElementById("close-modal");
+const natalBtn = document.getElementById("natal-btn");
+const minasBtn = document.getElementById("minas-btn");
+
+// Inicialmente, garantir que o modal esteja oculto
+modal.style.display = "none";
+
+// Mostrar modal ao clicar no botão do produto
+produtoBtn.addEventListener("click", () => {
+    modal.style.display = "flex"; // Exibe o modal
+});
+
+// Fechar modal ao clicar no botão "Fechar"
+closeModal.addEventListener("click", () => {
+    modal.style.display = "none"; // Oculta o modal
+});
+
+// Fechar modal ao clicar em Natal (e redirecionar)
+natalBtn.addEventListener("click", () => {
+    modal.style.display = "none"; // Oculta o modal
+    window.location.href = "https://link-para-natal.com"; // Substitua pelo link desejado
+});
+
+// Fechar modal ao clicar em Minas Gerais (e redirecionar)
+minasBtn.addEventListener("click", () => {
+    modal.style.display = "none"; // Oculta o modal
+    window.location.href = "https://link-para-minas.com"; // Substitua pelo link desejado
+});
+
+// Fechar modal ao clicar fora da área do modal
+window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+});
+
+
+
+  </script>
+</body>
+
 </html>
