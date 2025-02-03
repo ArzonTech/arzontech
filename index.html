@@ -1,428 +1,285 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bonés SVD 2025 - Bonés Exclusivos</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav-container">
+                <h1>Seu Boné SVD</h1>
+                <div class="nav-links">
+                    <a href="#produtos">Produtos</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#avaliacoes">Avaliações</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <button class="cart-btn" onclick="toggleCart()">
+                    <span class="cart-count">0</span> 🛒
+                </button>
+            </nav>
+        </header>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mounja Power</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-</head>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Edição Limitada SVD 2025</h1>
+                <p>Bonés exclusivos que contam histórias</p>
+                <a href="#produtos"><button class="cta-button">Conferir Bonés</button></a>
+                
+            </div>
+        </section>
 
-<body>
-  <div class="announcement">
-    <p>⚡ PROMOÇÃO POR TEMPO LIMITADO | FRETE GRÁTIS PARA TODO BRASIL</p>
-  </div>
+        <section class="promo-section">
+            <h2>🔥 Promoção Especial 🔥</h2>
+            <p>Leve <strong>2 bonés</strong> e pague apenas <span class="highlight">R$ 59,90</span>!</p>
+            <p>Leve <strong>3 bonés</strong> e pague apenas <span class="highlight">R$ 139,99</span>!</p>
+            <p>Aproveite essa oferta por tempo limitado! ⏳</p>
+        </section>
+        
 
-  <!-- Hero Carousel -->
-  <div class="hero-carousel swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="hero-content">
-          <h2>Mounja</h2>
-          <p>“Revolucionário Mounja natural” o número um em resultados !</p>
+        <section id="produtos" class="products">
+            <h2>Coleção Exclusiva</h2>
+            <div class="product-grid">
+                <div class="product-card" data-name="Boné Rocas Marrom" data-price="59.90">
+                    <div class="product-image brown">
+                        <img src="imagens/marrom.jpg" alt="Boné Marrom">
+                        <span class="limited-tag">Edição Limitada</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Boné Rocas Marrom</h3>
+                        <p class="price">R$ 59,90</p>
+                        <div class="stock-info">
+                            <div class="stock-bar">
+                                <div class="stock-level" style="width: 75%"></div>
+                            </div>
+                            <p>Restam apenas 25 unidades</p>
+                        </div>
+                        <div class="quantity-container">
+                            <label for="quantity-marrom">Quantidade:</label>
+                            <input type="number" id="quantity-marrom" class="quantity-input" value="1" min="1">
+                        </div>
+                        <button class="buy-button">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image white">
+                        <img src="imagens/branco.jpg" alt="Boné Branco">
+                        <span class="limited-tag">Edição Limitada</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Boné Rocas Branco</h3>
+                        <p class="price">R$ 59,90</p>
+                        <div class="stock-info">
+                            <div class="stock-bar">
+                                <div class="stock-level" style="width: 85%"></div>
+                            </div>
+                            <p>Restam apenas 30 unidades</p>
+                        </div>
+                        <div class="quantity-container">
+                            <label for="quantity-marrom">Quantidade:</label>
+                            <input type="number" id="quantity-marrom" class="quantity-input" value="1" min="1">
+                        </div>
+                        <button class="buy-button">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image black">
+                        <img src="imagens/preto.jpg" alt="Boné Preto">
+                        <span class="limited-tag">Edição Limitada</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Boné Rocas Preto</h3>
+                        <p class="price">R$ 59,90</p>
+                        <div class="stock-info">
+                            <div class="stock-bar">
+                                <div class="stock-level" style="width: 65%"></div>
+                            </div>
+                            <p>Restam apenas 30 unidades</p>
+                        </div>
+                        <div class="quantity-container">
+                            <label for="quantity-marrom">Quantidade:</label>
+                            <input type="number" id="quantity-marrom" class="quantity-input" value="1" min="1">
+                        </div>
+                        <button class="buy-button">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image pink">
+                        <img src="imagens/rosa.jpg" alt="Boné Rosa">
+                        <span class="limited-tag">Edição Limitada</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Boné Rocas Rosa</h3>
+                        <p class="price">R$ 59,90</p>
+                        <div class="stock-info">
+                            <div class="stock-bar">
+                                <div class="stock-level" style="width: 45%"></div>
+                            </div>
+                            <p>Últimas 25 unidades!</p>
+                        </div>
+                        <div class="quantity-container">
+                            <label for="quantity-marrom">Quantidade:</label>
+                            <input type="number" id="quantity-marrom" class="quantity-input" value="1" min="1">
+                        </div>
+                        <button class="buy-button">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="sobre">
+            <div class="feature">
+                <span class="icon">🚚</span>
+                <h3>Frete Grátis</h3>
+                <p>Natal e Parnamirim</p>
+            </div>
+            <div class="feature">
+                <span class="icon">⭐</span>
+                <h3>Qualidade Premium</h3>
+                <p>Materiais selecionados</p>
+            </div>
+            <div class="feature">
+                <span class="icon">🔒</span>
+                <h3>Compra Segura</h3>
+                <p>Pagamento protegido</p>
+            </div>
+        </section>
+
+        <section class="banner">
+            <div class="banner-content">
+                <h2>Edição Especial SVD 2025</h2>
+                <p>Cada boné conta uma história única do maior festival cultural do ano</p>
+                <button class="cta-button">Garanta o Seu</button>
+            </div>
+        </section>
+
+        <section id="avaliacoes" class="reviews">
+            <h2>O Que Dizem Nossos Clientes</h2>
+            <div class="review-grid">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"O melhor boné que já comprei! A qualidade é excepcional e o design é único."</p>
+                    <div class="reviewer">
+                        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=100" alt="Cliente">
+                        <div>
+                            <h4>João Silva</h4>
+                            <p>Cliente Verificado ✓</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Design incrível e acabamento perfeito. Já comprei todos os modelos!"</p>
+                    <div class="reviewer">
+                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&q=80&w=100" alt="Cliente">
+                        <div>
+                            <h4>Pedro Costa</h4>
+                            <p>Cliente Verificado ✓</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="gallery-section">
+            <h2>Se destaque e marque sua presença</h2>
+            <div class="gallery-grid">
+            <img src="imagens/1.jpg" alt="Foto do Festival">
+            <img src="imagens/2.jpg" alt="Foto do Festival">
+            <img src="imagens/3.jpg" alt="Foto do Festival">
+            <img src="imagens/4.jpg" alt="Foto do Festival">
+            <img src="imagens/5.jpg" alt="Foto do Festival">
+            <img src="imagens/6.jpg" alt="Foto do Festival">
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Qual o prazo de entrega?</h3>
+                    <p>Entregamos para todo o Brasil em até 7 dias úteis.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Os bonés são ajustáveis?</h3>
+                    <p>Sim, todos os modelos possuem regulagem para melhor ajuste.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Qual o material dos bonés?</h3>
+                    <p>Utilizamos algodão premium e fechos de alta qualidade.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Posso trocar se não gostar?</h3>
+                    <p>Sim, oferecemos 30 dias de garantia de satisfação.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Fique por Dentro das Novidades</h2>
+                <p>Receba ofertas exclusivas e seja o primeiro a saber sobre novos lançamentos</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu melhor e-mail">
+                    <button type="submit">Inscrever</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SDV 2025</h3>
+                    <p>O maior festival cultural do ano com edição limitada de bonés exclusivos.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>Celular: 558487704819</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <a href="#produtos">Produtos</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#avaliacoes">Avaliações</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CGauer. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+        <!-- Carrinho de Compras -->
+    <div class="cart-overlay">
+        <div class="cart">
+        <h2 class="cart-title">🛍️ Seu Carrinho</h2>
+        <ul class="cart-items"></ul>
+        <p class="cart-total">Total: R$ 0,00</p>
+        <div class="cart-buttons">
+            <button class="checkout-btn">Finalizar Compra ✅</button>
+            <button class="close-cart">❌ Fechar</button>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <!-- Product Header -->
-    <header class="product-header">
-      <p>Redução de medidas, principalmente em áreas como barriga, pernas e braços.</p>
-    </header>
-
-    <!-- Main Content -->
-    <div class="main-content">
-      <!-- Left Column - Product Image -->
-      <div class="product-image">
-        <img src="1.jpg" alt="RevitaLife Complex">
-        <div class="rating">
-          <div class="stars">
-          </div>
         </div>
-      </div>
-
-      <!-- Right Column - Product Info -->
-      <div class="product-info">
-        <div class="price-box">
-          <h2 style="text-align: center; font-size: 30px;">Informações sobre o produto:</h2>
-          <div class="price">
-            <p class="current-price" style="font-size: 20px;">Confira os benefícios e recursos exclusivos que este
-              produto oferece.</p>
-            <p class="installments">Disponível com diversas opções para atender às suas necessidades.</p>
-          </div>
-        </div>
-
-        <a href="#beneficios" class="buy-button">Saiba Mais</a>
-
-        <!-- Benefits -->
-
-      </div>
     </div>
 
-    <!-- Benefits Section -->
-    <section class="benefits">
-      <h2>Benefícios Comprovados</h2>
-      <div class="benefits-grid">
-        <div class="benefit-card">
-          <div class="benefit-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
-              <line x1="16" y1="8" x2="2" y2="22"></line>
-              <line x1="17.5" y1="15" x2="9" y2="15"></line>
-            </svg>
-          </div>
-          <h3>Natural</h3>
-          <p>100% natural e saudável, sem efeitos colaterais.</p>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-            </svg>
-          </div>
-          <h3>Bem-Estar</h3>
-          <p>Melhore sua qualidade de vida com ingredientes naturais que promovem equilíbrio físico e mental</p>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>
-          </div>
-          <h3>Resultados Rápidos</h3>
-          <p>Veja resultados em poucas semanas com nossa fórmula cientificamente desenvolvida</p>
-        </div>
-      </div>
-    </section>
-
-    <div class="benefits-container" id="beneficios">
-      <div class="benefits-section">
-        <div class="benefits-card">
-          <img src="https://mounjanatural.com/mounjapower12x/wp-content/uploads/2024/10/5-1-150x150.png"
-            alt="Auxílio no emagrecimento">
-          <h3>Auxilia no processo de emagrecimento</h3>
-          <p>Acelera o metabolismo através da nutrição celular eficaz, apoiando um processo de emagrecimento saudável.
-            Facilita a utilização de carboidratos como energia e melhora a absorção de proteínas.</p>
-        </div>
-
-        <div class="benefits-card">
-          <img
-            src="https://mounjanatural.com/mounjapower12x/wp-content/uploads/2024/10/depositphotos_14740185-stock-photo-greedy-man-eating-burger-150x150.webp"
-            alt="Reduz a fome excessiva">
-          <h3>Reduz a fome excessiva</h3>
-          <p>O psyllium, quitosana e cromo reduzem a vontade de comer, formando um gel que promove uma sensação de
-            saciedade sem comprometer a saúde.</p>
-        </div>
-
-        <div class="benefits-card">
-          <img src="https://mounjanatural.com/mounjapower12x/wp-content/uploads/2024/11/4-1-150x150.png"
-            alt="Redução de Gordura Corporal">
-          <h3>Controle Natural do Apetite por Doces</h3>
-          <p>O produto é formulado com extratos naturais, como o Gymnema Sylvestre, que ajudam a reduzir a sensibilidade
-            às papilas gustativas responsáveis pelo sabor doce. Isso inibe a vontade de consumir alimentos açucarados,
-            promovendo maior controle alimentar e contribuindo para uma dieta equilibrada.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- First CTA Section -->
-    <section class="cta-section">
-      <h2>Transforme Sua Vida Hoje</h2>
-      <p>Não espere mais para começar sua jornada de transformação</p>
-      <a href="#ofertas" class="cta-button">QUERO TRANSFORMAR MINHA VIDA</a>
-    </section>
-
-    <div class="reviews-carousel">
-      <h2 class="reviews-title">O que nossos clientes dizem</h2>
-      <div class="carousel-wrapper">
-        <button class="carousel-prev" aria-label="Anterior">←</button>
-        <div class="carousel">
-          <div class="review-card">
-            <img src="Imagens/pessoa4.jpg" alt="Foto do cliente">
-            <h3>Brena Alves</h3>
-            <p>"Eu saí do tamanho 42 para o 38 em 1 mês. Não vivo mais sem"</p>
-          </div>
-
-          <div class="review-card">
-            <img src="Imagens/pessoa3.jpg" alt="Foto do cliente">
-            <h3>Micheline Viana</h3>
-            <p>"Eu tinha feito de tudo para emagrecer e não conseguia. Com essas cápsulas emagreci 10kg em 2 meses e de
-              forma natural, sem reganho de peso"</p>
-          </div>
-        </div>
-        <button class="carousel-next" aria-label="Próximo">→</button>
-      </div>
-    </div>
-
-
-  </div>
-
-
-  <section class="infographic-section">
-    <h2>Nossa fórmula foi criada com produtos 100% naturais, sem contra indicações e pronto para dar o resultado e saúde
-      que tanto procura.</h2>
-    <img src="Adicionar1.svg" alt="Banner">
-  </section>
-
-
-
-
-  <!-- Before and After Section -->
-  <h2 style="text-align: center; color: #ee0175; font-size: 40px;">Resultados Reais</h2>
-  <div class="gallery">
-    <div class="gallery-item">
-      <img src="ProvaSocial2.png" alt="Imagem 4">
-    </div>
-    <div class="gallery-item">
-      <img src="provaSocial.png" alt="Imagem 6">
-    </div>
-  </div>
-
-  <div class="mounja-section">
-    <h1>O poderoso <span class="mounja-highlight">MOUNJA</span> é um produto natural e sem contra indicações</h1>
-
-
-    <img src="3.png" alt="Mounja Power" class="mounja-bottle">
-
-    <p class="mounja-product-text">
-      Nossas poderosas cápsulas auxiliam na redução de peso! Um tratamento que atua diretamente no acúmulo de gordura,
-      proporcionando resultados rápidos sem os possíveis efeitos adversos de medicamentos mais fortes no fígado e no
-      estômago.
-    </p>
-
-    <p class="mounja-cta">
-      Esqueça chás e soluções milagrosas; invista em algo que pode realmente transformar a sua realidade!
-    </p>
-
-    <div class="mounja-whatsapp-button">
-      <svg fill="#ffffff" height="24" viewBox="0 0 24 24" width="24">
-        <path
-          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-14h2v6h-2zm0 8h2v2h-2z" />
-      </svg>
-    </div>
-  </div>
-
-
-  <!-- Second CTA Section -->
-  <section class="cta-section alternative">
-    <h2>Não Perca Mais Tempo</h2>
-    <p>Junte-se a milhares de pessoas que já transformaram suas vidas</p>
-    <a href="#ofertas" class="cta-button">QUERO COMEÇAR AGORA</a>
-  </section>
-
-  <div class="aviso">
-    <h1>ATENÇÃO</h1>
-    <p>O MOUNJA POWER 12X VOCÊ NÃO ENCONTRA EM FARMÁCIAS, <br> SOMENTE AQUI!</p>
-  </div>
-
-
-  <div class="Mounja">
-    <div class="header">
-      <h1>2 Frascos<span>Mounja</span></h1>
-      <p>PARA DESCOBRIR O PODER
-        DO MOUNJA.</p>
-    </div>
-    <div class="content">
-      <div class="images">
-        <img src="2.jpg" alt="Mounja Bottles">
-      </div>
-      <p>SUPER PROMOÇÃO DE LANÇAMENTO NO BRASIL.</p>
-      <div class="price">
-        <h2>12x <span>12,04</span></h2>
-        <p>OU R$ 119,90 À VISTA</p>
-      </div>
-      <div class="color">
-        <div class="payment-methods">
-          <img src="https://www.maquinadecartao.com/img/1/visa-logo-bandeira-de-maquininha-de-cartao-david-tech.webp"
-            alt="Visa">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/1200px-Mastercard_2019_logo.svg.png"
-            alt="Mastercard">
-          <img src="https://marcasmais.com.br/wp-content/uploads/2021/10/1.png" alt="Elo">
-          <img
-            src="https://image-processor-storage.s3.us-west-2.amazonaws.com/uploads/3531e6c12744429b32ead4a14a684991/american-expresspngpng.png"
-            alt="Amex">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Hipercard_logo.svg" alt="Hipercard">
-        </div>
-        <ul>
-          <li>produto 100% natural</li>
-          <li>10 meses de tratamento</li>
-          <li>frete grátis para todo Brasil</li>
-          <li>super desconto pagando à vista</li>
-        </ul>
-        <button id="produto-btn" class="produto-button">QUERO APROVEITAR</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="Mounja">
-    <div class="header">
-      <h1>compre 3 e <span>LEVE 4</span></h1>
-      <p>RESULTADO GARANTIDO</p>
-    </div>
-    <div class="content">
-      <div class="images">
-        <img src="Adicionar4.png" alt="Mounja Bottles">
-        <div class="gratis-badge">
-          <span>+ 1 GRÁTIS</span>
-        </div>
-      </div>
-      <p>SUPER PROMOÇÃO DE LANÇAMENTO NO BRASIL.</p>
-      <div class="price">
-        <h2>12x <span>12,04</span></h2>
-        <p>OU R$ 179,90 À VISTA</p>
-      </div>
-      <div class="color">
-        <div class="payment-methods">
-          <img src="https://www.maquinadecartao.com/img/1/visa-logo-bandeira-de-maquininha-de-cartao-david-tech.webp"
-            alt="Visa">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/1200px-Mastercard_2019_logo.svg.png"
-            alt="Mastercard">
-          <img src="https://marcasmais.com.br/wp-content/uploads/2021/10/1.png" alt="Elo">
-          <img
-            src="https://image-processor-storage.s3.us-west-2.amazonaws.com/uploads/3531e6c12744429b32ead4a14a684991/american-expresspngpng.png"
-            alt="Amex">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Hipercard_logo.svg" alt="Hipercard">
-        </div>
-        <ul>
-          <li>produto 100% natural</li>
-          <li>10 meses de tratamento</li>
-          <li>frete grátis para todo Brasil</li>
-          <li>super desconto pagando à vista</li>
-        </ul>
-        <button id="produto-btn" class="produto-button">QUERO APROVEITAR</button>
-      </div>
-    </div>
-  </div>
-
-
-  <section class="infographic-section">
-    <img src="Adicionar2.svg" alt="Banner">
-  </section>
-
-  
-
-  
-
-
-  <!-- FAQ Section -->
-  <section class="faq-section">
-    <h2>Dúvidas Frequentes</h2>
-    <div class="faq-grid">
-      <details class="faq-item">
-        <summary>O que é a mounja</summary>
-        <p>A combinação de berinjela, alcachofra e picolinato de cromo oferece benefícios significativos à saúde. Ela
-          ajuda a controlar o colesterol LDL e regular os níveis de açúcar no sangue, melhorando a sensibilidade à
-          insulina. Além disso, é rica em fibras, promovendo uma digestão saudável e aumentando a saciedade. Os
-          poderosos antioxidantes presentes nos ingredientes combatem radicais livres e protegem as células. Por fim,
-          também auxiliam na desintoxicação do organismo, favorecendo a saúde geral</p>
-      </details>
-      <details class="faq-item">
-        <summary>Como Usar</summary>
-        <p>Recomenda-se a ingestão de 2 cápsulas de Mounja ao dia. Para melhores resultados, tome uma cápsula pela manhã
-          e outra à noite, preferencialmente durante as refeições. Isso ajuda a maximizar a absorção dos nutrientes e a
-          eficácia do produto. É importante beber um copo de água ao ingerir as cápsulas. Para garantir a segurança e
-          eficácia do uso, consulte um profissional de saúde antes de iniciar a suplementação, especia lmente se você
-          estiver grávida, amamentando ou tiver condições de saúde pré-existentes.</p>
-      </details>
-    </div>
-  </section>
-
-
-  <div id="modal" class="modal">
-    <div class="modal-content">
-        <h2 class="modal-title">Escolha sua cidade</h2>
-        <p class="modal-description">Por favor, selecione sua localização para continuarmos com sua compra.</p>
-        <button id="natal-btn" class="city-button natal">Natal</button>
-        <button id="minas-btn" class="city-button minas">Minas Gerais</button>
-        <button id="close-modal" class="close-button">Fechar</button>
-    </div>
-</div>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>© 2024 Mounjac. Todos os direitos reservados.</p>
-      <p class="disclaimer">Este produto não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença.</p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    new Swiper('.hero-carousel', {
-      loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
+        <script src="cart.js"></script>
+        <script>
+            document.querySelectorAll('.gallery-grid img').forEach(img => {
+    img.addEventListener('click', () => {
+        const lightbox = document.getElementById('lightbox');
+        lightbox.style.display = 'flex';
+        lightbox.querySelector('img').src = img.src;
+    });
     });
 
-
-    const carousel = document.querySelector('.carousel');
-    const prevButton = document.querySelector('.carousel-prev');
-    const nextButton = document.querySelector('.carousel-next');
-
-    prevButton.addEventListener('click', () => {
-      carousel.scrollBy({ left: -320, behavior: 'smooth' });
+    document.getElementById('lightbox').addEventListener('click', () => {
+    document.getElementById('lightbox').style.display = 'none';
     });
-
-    nextButton.addEventListener('click', () => {
-      carousel.scrollBy({ left: 320, behavior: 'smooth' });
-    });
-
-
-
-    // Seleciona os elementos
-// Selecionar elementos
-const produtoBtn = document.getElementById("produto-btn");
-const modal = document.getElementById("modal");
-const closeModal = document.getElementById("close-modal");
-const natalBtn = document.getElementById("natal-btn");
-const minasBtn = document.getElementById("minas-btn");
-
-// Inicialmente, garantir que o modal esteja oculto
-modal.style.display = "none";
-
-// Mostrar modal ao clicar no botão do produto
-produtoBtn.addEventListener("click", () => {
-    modal.style.display = "flex"; // Exibe o modal
-});
-
-// Fechar modal ao clicar no botão "Fechar"
-closeModal.addEventListener("click", () => {
-    modal.style.display = "none"; // Oculta o modal
-});
-
-// Fechar modal ao clicar em Natal (e redirecionar)
-natalBtn.addEventListener("click", () => {
-    modal.style.display = "none"; // Oculta o modal
-    window.location.href = "https://link-para-natal.com"; // Substitua pelo link desejado
-});
-
-// Fechar modal ao clicar em Minas Gerais (e redirecionar)
-minasBtn.addEventListener("click", () => {
-    modal.style.display = "none"; // Oculta o modal
-    window.location.href = "https://link-para-minas.com"; // Substitua pelo link desejado
-});
-
-// Fechar modal ao clicar fora da área do modal
-window.addEventListener("click", (event) => {
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-});
-
-
-
-  </script>
-</body>
-
-</html>
+        </script>
+    </body>
+    </html>
